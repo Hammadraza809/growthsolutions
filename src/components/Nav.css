@@ -1,0 +1,20 @@
+.nav {
+  margin-right: 60px;
+  text-transform: uppercase;
+}
+.nav-link {
+  margin: 10px 20px;
+}
+.nav-link:hover {
+  color: rgb(245, 7, 7) !important;
+}
+.contact-us {
+  background-color: black;
+  color: white !important;
+  padding: 7px 20px !important;
+  border-radius: 3px;
+}
+.contact-us:hover {
+  color: white !important;
+  background-color: rgb(245, 7, 7) !important;
+}

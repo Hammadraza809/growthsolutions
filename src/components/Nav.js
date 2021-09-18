@@ -1,22 +1,35 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import "./Nav.css";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 function NavBar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="light">
-      <Navbar.Brand href="/">Growth Solutions</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Services</Nav.Link>
-          <Nav.Link href="#">About Us</Nav.Link>
-          <Nav.Link href="#">Services</Nav.Link>
-          <Nav.Link href="#">Services</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+    <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+      <Container>
+        <Navbar.Brand className="brand" href="#home">
+          Growth Solutions
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse
+          id="responsive-navbar-nav"
+          className="justify-content-end"
+        >
+          <Nav className="nav">
+            <Nav.Link className="nav-link" href="#deets">
+              Home
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#memes">
+              Services
+            </Nav.Link>
+            <Nav.Link className="nav-link" href="#memes">
+              About Us
+            </Nav.Link>
+            <Nav.Link className="nav-link contact-us" href="#memes">
+              Get A Quote
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 }
